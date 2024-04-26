@@ -181,17 +181,29 @@ a {
   background-color: #fff;
   border-radius: 10px;
 }
+.profile_container > p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid rgb(140 140 140 / 0.2);
+  padding-bottom: 20px;
+}
 .background_profile {
   height: 50px;
 }
-.background_profile > svg{
-  border-top-right-radius:10px;
-  border-top-left-radius:10px ;
+.background_profile > svg {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .profile_link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 .profile_link > img {
   color: transparent;
@@ -199,6 +211,39 @@ a {
   height: 72px;
   border-radius: 50%;
   margin-top: -20px;
+}
+
+.profile_stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: 1px solid rgb(140 140 140 / 0.2);
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.my_items {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+  padding: 20px;
+}
+.my_items  div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.my_items  div > svg {
+  fill: #666666 !important;
+}
+
+.profile_stats > .stats_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .post_feed {
   width: 50%;
