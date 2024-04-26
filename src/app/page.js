@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/header';
+import Feed from '../components/homepage/feed';
 
 const page = () => {
   return (
-    <div>
+    <div className='application-outlet'>
       <Header/>
-      Hello world
+      <Feed />
     </div>
   )
 }
