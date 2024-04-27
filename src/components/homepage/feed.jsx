@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import profile from "../../../public/profile.jpg";
+import FeedPost from "./feed_post";
 
 const feed = () => {
   return (
@@ -68,7 +69,9 @@ const feed = () => {
               </Link>
             </div>
           </div>
-          <div className="post_feed">Feed</div>
+          <div className="post_feed">
+            <FeedPost/>
+          </div>
           <div className="recommendation_feed">Add to your feed</div>
         </div>
       </div>
