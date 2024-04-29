@@ -283,6 +283,9 @@ a {
   top: 10px;
   right: 10px;
   cursor: pointer;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
   font-size: 20px;
   color: #888;
 }
