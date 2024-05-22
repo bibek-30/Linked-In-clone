@@ -106,15 +106,20 @@ a {
     color-scheme: dark;
   }
 }
+.application-outlet {
+  background-color: #fff;
+}
 
 /* header css */
 .header {
   display: flex;
   flex-direction: row;
-  padding: 5px;
-  justify-content: space-evenly;
+  padding: 5px 0;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff !important;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .header_logo {
@@ -168,7 +173,9 @@ a {
 }
 
 .page-width {
-  padding: 20px 180px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 .feed_container {
@@ -176,6 +183,7 @@ a {
   flex-direction: row;
   gap: 20px;
 }
+
 .profile_feed {
   width: 22%;
   background-color: #fff;
@@ -231,12 +239,12 @@ a {
   color: #666666;
   padding: 15px;
 }
-.my_items  div {
+.my_items div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.my_items  div > svg {
+.my_items div > svg {
   fill: #666666 !important;
 }
 
@@ -253,7 +261,6 @@ a {
   width: 28%;
   background-color: green;
 }
-
 
 /* ModelComponent.css */
 
@@ -279,14 +286,19 @@ a {
 }
 
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   cursor: pointer;
-  background-color: red;
-  padding: 10px;
-  border-radius: 10px;
   font-size: 20px;
   color: #888;
 }
 
+.model-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.model-head > span {
+  font-size: 24px;
+  font-weight: 400;
+}

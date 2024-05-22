@@ -18,10 +18,12 @@ const ModelComponent = () => {
       {isOpen && (
         <div className="model">
           <div className="model-content">
+            <div className="model-head">
+            <p>Bibek Shrestha</p>
             <span className="close" onClick={closeModel}>
               &times;
             </span>
-            <p>This is the content of the model.</p>
+            </div>
           </div>
         </div>
       )}
