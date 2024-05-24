@@ -108,13 +108,17 @@ a {
 }
 
 /* header css */
+.application-outlet{
+  background-color: #fff !important;
+}
 .header {
   display: flex;
   flex-direction: row;
-  padding: 5px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: #fff !important;
+  max-width:1128px;
+  margin: 0 auto;
+  padding: 5px 0;
 }
 
 .header_logo {
@@ -129,6 +133,7 @@ a {
   border: none;
   border-radius: 5px;
   background-color: #edf3f8;
+  color: #000;
 }
 
 .header_logo > .header_link > svg {
@@ -165,10 +170,12 @@ a {
 .feed {
   background-color: #f4f2ee;
   color: #000;
+  padding-top: 20px;
 }
 
 .page-width {
-  padding: 20px 180px;
+  max-width:1128px;
+  margin: 0 auto;
 }
 
 .feed_container {
