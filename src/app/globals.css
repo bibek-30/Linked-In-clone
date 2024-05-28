@@ -111,15 +111,16 @@ a {
 }
 
 /* header css */
+.application-outlet {
+  background-color: #fff !important;
+}
 .header {
   display: flex;
   flex-direction: row;
-  padding: 5px 0;
-  justify-content: space-between;
+  padding: 5px;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #fff !important;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .header_logo {
@@ -134,6 +135,7 @@ a {
   border: none;
   border-radius: 5px;
   background-color: #edf3f8;
+  color: #000;
 }
 
 .header_logo > .header_link > svg {
@@ -170,12 +172,11 @@ a {
 .feed {
   background-color: #f4f2ee;
   color: #000;
+  padding-top: 20px;
 }
 
 .page-width {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-top: 10px;
+  padding: 20px 180px;
 }
 
 .feed_container {
@@ -255,12 +256,12 @@ a {
 }
 .post_feed {
   width: 50%;
-  background-color: purple;
 }
 .recommendation_feed {
   width: 28%;
   background-color: green;
 }
+
 
 /* ModelComponent.css */
 
@@ -273,7 +274,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 50px;
 }
 
 .model-content {
@@ -285,20 +287,19 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.model-content > div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .close {
   cursor: pointer;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
   font-size: 20px;
   color: #888;
 }
 
-.model-head {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.model-head > span {
-  font-size: 24px;
-  font-weight: 400;
-}
