@@ -108,7 +108,7 @@ a {
 }
 
 /* header css */
-.application-outlet{
+.application-outlet {
   background-color: #fff !important;
 }
 .header {
@@ -116,7 +116,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width:1128px;
+  max-width: 1128px;
   margin: 0 auto;
   padding: 5px 0;
 }
@@ -174,7 +174,7 @@ a {
 }
 
 .page-width {
-  max-width:1128px;
+  max-width: 1128px;
   margin: 0 auto;
 }
 
@@ -238,12 +238,12 @@ a {
   color: #666666;
   padding: 15px;
 }
-.my_items  div {
+.my_items div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.my_items  div > svg {
+.my_items div > svg {
   fill: #666666 !important;
 }
 
@@ -254,13 +254,17 @@ a {
 }
 .post_feed {
   width: 50%;
-  background-color: purple;
 }
 .recommendation_feed {
   width: 28%;
   background-color: green;
 }
 
+.post_feed > .feedpost{
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
 
 /* ModelComponent.css */
 
@@ -273,7 +277,8 @@ a {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 50px;
 }
 
 .model-content {
@@ -285,15 +290,43 @@ a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.model-content > div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   cursor: pointer;
-  background-color: red;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
+  font-size: 30px;
   color: #888;
 }
 
+.post_profile > img {
+  color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.post_profile {
+  flex: 0 0 auto;
+}
+
+.post-wrapper > button {
+  flex: 1;
+  text-align: left;
+  padding: 14px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #FFF;
+  color: #000;
+}
